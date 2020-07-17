@@ -6,12 +6,6 @@ import data from "../Data/fundRecord.json";
 export class App extends Component {
   constructor(props) {
     super(props);
-    // this.state = {
-    //   initialData: [],
-    //   fundsToDisplay: [],
-    //   totalFilteredResultCount: null,
-    //   searchInputText: "",
-    // };
 
     this.state = {
       initialData: data,
