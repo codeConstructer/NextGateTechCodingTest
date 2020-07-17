@@ -19,7 +19,6 @@ const Table = (props) => {
     );
   };
 
-  //Remove unnecessary columns mostly id.
   return (
     <div>
       {props.totalFilteredResultCount && (
@@ -27,7 +26,7 @@ const Table = (props) => {
       )}
       <h5>True Value : {props.fundWithTrue}</h5>
       <h5>False Value : {props.fundWithFalse}</h5>
-      <h5>alert Value : {props.alertTotal}</h5>
+      <h5>Alert Value : {props.alertTotal}</h5>
 
       <div className="table">
         <ReactBootStrap.Table striped bordered hover>
