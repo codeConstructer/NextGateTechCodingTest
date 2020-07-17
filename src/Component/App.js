@@ -75,23 +75,6 @@ export class App extends Component {
         return isMatchfound;
       });
 
-      // const totalAlert = data.reduce((total, record) => {
-      //   total += record.nb_alerts;
-      //   return total;
-      // }, 0);
-
-      /* const Table = () => {
-        return (
-          <>
-            <table>
-              {data.map(record => {
-                <tr><td>{record.name}</td><td>{record.nb_alerts}</td></tr>
-              })}
-            </table>
-            <div> Total debt: {totalAlert} </div>
-          </>
-        )
-      }*/
 
       this.setState({
         ...this.state,
