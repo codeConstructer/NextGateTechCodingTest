@@ -6,12 +6,6 @@ import data from "../Data/fundRecord.json";
 export class App extends Component {
   constructor(props) {
     super(props);
-    // this.state = {
-    //   initialData: [],
-    //   fundsToDisplay: [],
-    //   totalFilteredResultCount: null,
-    //   searchInputText: "",
-    // };
 
     this.state = {
       initialData: data,
@@ -25,7 +19,6 @@ export class App extends Component {
 
     // this.getDataFromfirebase();
   }
-  
 
   getDataFromfirebase = () => {
     fetch("https://ngt-with-data.firebaseio.com/").then((response) => {
@@ -74,24 +67,6 @@ export class App extends Component {
         }
         return isMatchfound;
       });
-
-      // const totalAlert = data.reduce((total, record) => {
-      //   total += record.nb_alerts;
-      //   return total;
-      // }, 0);
-
-      /* const Table = () => {
-        return (
-          <>
-            <table>
-              {data.map(record => {
-                <tr><td>{record.name}</td><td>{record.nb_alerts}</td></tr>
-              })}
-            </table>
-            <div> Total debt: {totalAlert} </div>
-          </>
-        )
-      }*/
 
       this.setState({
         ...this.state,
