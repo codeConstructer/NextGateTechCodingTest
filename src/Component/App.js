@@ -68,6 +68,10 @@ export class App extends Component {
         return isMatchfound;
       });
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1eb850b439d3cfafc7b69b3367bbc4d4c8ccb2b1
       this.setState({
         ...this.state,
         fundsToDisplay: this.getOnlyFirstHundredResults(filteredData),
